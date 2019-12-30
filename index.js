@@ -62,13 +62,6 @@ bot.on("message", function(message){
        message.channel.sendMessage("Bye!"); 
     }
 
-    // if(message.content == "Хлебушек пидар?"){
-    //    message.channel.sendMessage("ДА ДА ДА"); 
-    // }
-    // if(message.content == "Бот ты пидар"){
-    //    message.channel.sendMessage("Omg retard..."); 
-    // }
-
 // prefix settings
     if(!message.content.startsWith(PREFIX)) return;
 
@@ -95,23 +88,7 @@ bot.on("message", function(message){
                 .setFooter("Pekaby the best")
             message.channel.sendMessage(embed)
             break;
-            //case "profile":
-            //var profile = new Discord.RichEmbed()
-             //   .setField(message.author.title(""))
-            //    .setThumbnail(message.author.avatarURL)
-            //message.channel.sendMessage(profile)
-           // break;
-           // -- - - - - -- - - - - - - - - - - -
-
-           // music YDL - core 
-           // case "mute":
-           //  var embed = new Discord.RichEmbed()
-           //      .addField("MUTE", "III040lad Was muted by Pekaby", )
-           //      .setColor("5a0ff2")
-           //      .setFooter("For 1 day")
-           //      .setThumbnail(message.author.avatarURL)
-           //  message.channel.sendMessage(embed)
-           //  break;
+          
         case "play":
 
             if (!args[1]) {
@@ -172,12 +149,6 @@ bot.on("message", function(message){
             message.channel.sendMessage("ТDo you understand what did you write?");
         }
             break;
-        
-        
-
-
-
-
 
 
             // testing for cpmmand 
