@@ -37,7 +37,7 @@ bot.on('ready', () => {
     console.log("Ready");
     });
         bot.on("guildMemberAdd", function(member) {
-            member.guild.channels.find("name", "chat").sendMessage("Привет " + member.toString("") +"!" + " Добро пожаловать на марс!"); 
+            member.guild.channels.find("name", "chat").sendMessage("Привет " + member.toString("") +"!" + " Welcome to Pekaby land!"); 
         })
 
 bot.on("message", function(message){
@@ -50,9 +50,6 @@ bot.on("message", function(message){
     }
     if(message.content == "Hi bot"){
         message.channel.sendMessage("Hello ^_^")
-    }
-    if(message.content == "Hello bot"){
-        message.channel.sendMessage("Hello!")
     }
 
     if(message.content == "Bye bot"){
@@ -72,11 +69,7 @@ bot.on("message", function(message){
     switch (args[0].toLowerCase()){
         case "ping":
             message.channel.sendMessage("Pong!");
-            break; 
-        case "info":
-            message.channel.sendMessage("Teseting")
             break;
-        
         case "embed":
             var embed = new Discord.RichEmbed()
                 .addField("Mute", "III040lad", )
@@ -146,14 +139,12 @@ bot.on("message", function(message){
             if(args[1]){
             message.channel.sendMessage(yn[Math.floor(Math.random() * yn.length)]);
         }else{
-            message.channel.sendMessage("ТDo you understand what did you write?");
+            message.channel.sendMessage("Do you understand what did you write?");
         }
             break;
-
-
-            // testing for cpmmand 
+ 
             default:
-            message.channel.sendMessage("Неверная команда")
+            message.channel.sendMessage("Wrong command!")
     }
 });
 
